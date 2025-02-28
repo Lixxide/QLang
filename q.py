@@ -64,7 +64,6 @@ def interpret(c, w, h):
             anchr = c[y + 2 * ys][x + 2 * xs]
         except:
             anchr = " "
-        print([char,nchr,anchr])
 
         if char == ">":
             xs = 1
@@ -260,7 +259,7 @@ def interpret(c, w, h):
                 px += 1
                 pc = c[py][px]
             if (chr(data[2]) != "d"):
-                f = open(filename, chr(data[2]), encoding='utf-8')
+                f = open(filename, chr(data[2]))
             if (chr(data[2]) == "a" or chr(data[2]) == "w"):
                 content=""
                 px = data[3]
@@ -270,8 +269,10 @@ def interpret(c, w, h):
                     content = content + pc
                     px += 1
                     pc = c[py][px]
+                f.write(content)
             elif (chr(data[2]) == "r"):
-                data[5] = f.read()[data[6]]
+                filedata = f.read()
+                data[5] = ord(filedata[data[6]])
             elif (chr(data[2]) == "d"):
                 os.remove(filename)
             noa = 1
