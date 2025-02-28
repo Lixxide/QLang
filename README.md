@@ -1,3 +1,5 @@
+![alt text](https://github.com/Lixxide/QuartzLang/blob/main/logo.png)
+
 QuartzLang is 2D programing language with no (data) stacks, but with return, file commands, access to cmd, and some sort of recursion
 
 QuartzLang uses a list of 10 numbers to store things (data[i]), you can also add and get data from the terrain/field
