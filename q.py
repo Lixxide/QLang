@@ -278,7 +278,6 @@ def interpret(c, w, h):
         elif char == "Q":
             return data
         
-        print(noa)
         x += noa * xs
         y += noa * ys
 
