@@ -197,11 +197,11 @@ def interpret(c, w, h):
                 xs, ys = tl(xs, ys)
         elif char == "r":
             new_data = interpret(c,w,h)
-            data[0] = new_data[5]
-            data[1] = new_data[6]
-            data[2] = new_data[7]
-            data[3] = new_data[8]
-            data[4] = new_data[9]
+            data[5] = new_data[0]
+            data[6] = new_data[1]
+            data[7] = new_data[2]
+            data[8] = new_data[3]
+            data[9] = new_data[4]
         elif char == "(":
             zeroth = data[0]
             data.pop(0)
