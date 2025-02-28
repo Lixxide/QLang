@@ -62,7 +62,7 @@ def interpret(c, w, h):
             anchr = c[y + 2 * ys][x + 2 * xs]
         except:
             anchr = " "
-        print([char,nchr,anchr])
+        #print([char,nchr,anchr])
 
         if char == ">":
             xs = 1
