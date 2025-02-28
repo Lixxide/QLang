@@ -50,6 +50,8 @@ def interpret(c, w, h):
     ret_stack = []
 
     while True:
+        noa = 1
+
         try:
             char = c[y][x]
         except:
@@ -62,7 +64,7 @@ def interpret(c, w, h):
             anchr = c[y + 2 * ys][x + 2 * xs]
         except:
             anchr = " "
-        #print([char,nchr,anchr])
+        print([char,nchr,anchr])
 
         if char == ">":
             xs = 1
@@ -197,11 +199,11 @@ def interpret(c, w, h):
                 xs, ys = tl(xs, ys)
         elif char == "r":
             new_data = interpret(c,w,h)
-            data[5] = new_data[0]
-            data[6] = new_data[1]
-            data[7] = new_data[2]
-            data[8] = new_data[3]
-            data[9] = new_data[4]
+            data[0] = new_data[5]
+            data[1] = new_data[6]
+            data[2] = new_data[7]
+            data[3] = new_data[8]
+            data[4] = new_data[9]
         elif char == "(":
             zeroth = data[0]
             data.pop(0)
@@ -269,14 +271,14 @@ def interpret(c, w, h):
                     px += 1
                     pc = c[py][px]
             elif (chr(data[2]) == "r"):
-                data[5] = ord(f.read()[data[6]])
+                data[5] = f.read()[data[6]]
             elif (chr(data[2]) == "d"):
                 os.remove(filename)
             noa = 1
         elif char == "Q":
             return data
-        else:
-            noa = 1
+        
+        print(noa)
         x += noa * xs
         y += noa * ys
 
