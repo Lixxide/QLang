@@ -1,4 +1,4 @@
-![alt text](https://github.com/Lixxide/QuartzLang/blob/main/logo.png)
+![logo](https://github.com/Lixxide/QuartzLang/blob/main/logo.png)
 
 QuartzLang is 2D programing language with no (data) stacks, but with return, file commands, access to cmd, and some sort of recursion
 
