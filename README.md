@@ -1,6 +1,6 @@
 QLang is 2D programing language with no (data) stacks, but with return, file commands, access to cmd, and some sort of recursion
 
-QLang uses a list of 10 numbers to store things (data[i]), you can also place and remove stuff on the terrain
+QLang uses a list of 10 numbers to store things (data[i]), you can also add and get stuff from the terrain
 
 # Documentation
 
