@@ -269,7 +269,7 @@ def interpret(c, w, h):
                     px += 1
                     pc = c[py][px]
             elif (chr(data[2]) == "r"):
-                data[5] = f.read()[data[6]]
+                data[5] = ord(f.read()[data[6]])
             elif (chr(data[2]) == "d"):
                 os.remove(filename)
             noa = 1
