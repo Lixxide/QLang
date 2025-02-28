@@ -18,7 +18,7 @@ sab : warps code pointer to x = data[a] y = data[b] (return possible)
 
 **Data in and out**
 
-}ab : sets data[a] to the ascii/UTF-8/idk value of b
+{ab : sets data[a] to the ascii/UTF-8/idk value of b
 
 }a  : prints data[a] as a character
 
