@@ -74,6 +74,8 @@ r   : recursion, upon exit, data[5 to 9] = new_data[0 to 4] (where new_data is t
 
 Q   : stops the program
 
+cab : executes in the terminal/cmd the string at x = data[a] y = data[b], the string is terminated by '§'
+
 **Moving Data**
 
 (   : moves data left, with wrapping
