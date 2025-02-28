@@ -39,6 +39,7 @@ aab : writes data[0] as a character at x = data[a] y = data[b]
 Aab : writes data[0] as a character at x = data[a] y = data[b]
 
 **Math**
+
 +ab : data[a] = data[a] + data[b]
 
 -ab : data[a] = data[a] - data[b]
@@ -55,6 +56,7 @@ Aab : writes data[0] as a character at x = data[a] y = data[b]
 
 
 **Flow control**
+
 ;a  : skips next command if data[a] is 0
 
 ?ab : if data[a] = data[b], the code pointer doesn't turn, if data[a] > data[b] it turns left, and if data[a] < data[b] it turns right
@@ -65,6 +67,7 @@ Na  : if data[a] = 0, the code pointer doesn't turn, but turns right if data[a] 
 
 
 **Misc**
+
 Pab : prints the string at x = data[a] y = data[b], the string is terminated by '§'
 
 r   : recursion, upon exit, data[5 to 9] = new_data[0 to 4] (where new_data is the data of the new code pointer)
