@@ -265,7 +265,7 @@ def interpret(c, w, h):
                 py = data[4]
                 pc = c[py][px]
                 while pc != "§":
-                    content = filename + pc
+                    content = content + pc
                     px += 1
                     pc = c[py][px]
             elif (chr(data[2]) == "r"):
